@@ -2,12 +2,34 @@
 .footer {
   align-items: center;
   background-color: $white;
-  border-bottom: $gridline;
   display: flex;
   height: $header-height;
   padding: 0 map-get($spacers, 4);
   position: relative;
   z-index: 100;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    left: 0;
+    padding: map-get($spacers, 4);
+    position: fixed;
+    top: 0;
+    width: 100px;
+  }
+}
+
+.header {
+  border-bottom: $gridline;
+  border-bottom-width: 1px;
+  z-index: 100;
+
+  @include media-breakpoint-up(lg) {
+    align-items: flex-start;
+    border-bottom: 0;
+    border-right: $gridline;
+  }
 }
 
 .header__brand {
@@ -15,6 +37,13 @@
   align-items: center;
   position: relative;
   z-index: 110;
+
+  @include media-breakpoint-up(lg) {
+    align-items: flex-start;
+    background-color: transparent;
+    border-bottom-width: 0;
+    border-right-width: 1px;
+  }
 }
 
 .header__logo {
@@ -56,6 +85,29 @@
   width: 80%;
 }
 
-.header__scroll-label {
+.scroll-label {
   display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+    min-width: 120px;
+    text-align: justify;
+    transform: rotate(90deg) translate(-100%);
+    transform-origin: bottom left;
+    user-select: none;
+  }
+}
+
+.scroll-label__container {
+  align-items: center;
+  display: flex;
+}
+
+.scroll-label__dash {
+  background-color: $body-color;
+  height: 1px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 36px;
 }

@@ -1,7 +1,7 @@
 <footer class="footer">
-  <button class="footer__location">En</button>
+  <button type="button" class="footer__location">En</button>
 
-  <div class="welcome-label">Welcome to MCG</div>
+  <div class="welcome-label text-sm">Welcome to MCG</div>
 
   <ul class="footer__social-icons">
     <li>

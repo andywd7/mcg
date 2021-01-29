@@ -7,8 +7,10 @@
     </a>
   </div>
 
-  <div class="header__scroll-label">
-    <div>Scroll</div>
+  <div class="scroll-label text-sm">
+    <div class="scroll-label__container">
+      <span class="scroll-label__dash"></span>Scroll
+    </div>
     <div>to navigate</div>
   </div>
 
@@ -22,4 +24,5 @@
       ]) !!}
     @endif
   </nav>
+  <div class="navbar__backdrop"></div>
 </header>

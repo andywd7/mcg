@@ -50,3 +50,5 @@ Set homepage as static and then choose the Home template for the home page.
    2. Nav
    3. Content
    4. Footer
+5. Move on to desktop design
+6. Fill in the gaps between Mobile and Desktop

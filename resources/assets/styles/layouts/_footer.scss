@@ -1,7 +1,14 @@
 .footer {
-  border-bottom: 0;
   border-top: $gridline;
   justify-content: space-between;
+
+  @include media-breakpoint-up(lg) {
+    align-content: space-between;
+    border-left-width: 1px;
+    border-top-width: 0;
+    left: auto;
+    right: 0;
+  }
 }
 
 .footer__location {
@@ -12,6 +19,13 @@
 
 .welcome-label {
   display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+    min-width: 160px;
+    text-align: center;
+    transform: rotate(90deg);
+  }
 }
 
 .footer__social-icons {
@@ -20,8 +34,16 @@
   margin-bottom: 0;
   padding: 0;
 
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
   li {
     padding-left: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 0 0;
+    }
 
     a img {
       display: block;
