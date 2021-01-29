@@ -1,3 +1,4 @@
+// style for all small text
 .text-sm {
   font-size: 11px;
   text-transform: uppercase;
@@ -12,10 +13,15 @@
   }
 }
 
+// hack for wordpress admin bar
 .logged-in .container-wrap {
   height: calc(100vh - 32px);
 }
 
+// cover image. My intention was to add 2 more images for 02 and 03 and
+// transition them when scroll. This is why I have done the 4 quarter panels,
+// whilst helping to place content as well. Otherwise I could have just used
+// a gradient background to produce repeating gridlines.
 .cover {
   align-items: flex-end;
   background-size: cover;
@@ -33,6 +39,7 @@
   }
 }
 
+// cover text. resizes smaller on smaller screens
 .content {
   padding: 0 2rem 4rem;
   display: flex;
@@ -106,15 +113,12 @@
 
 .panels__panel {
   align-items: flex-end;
-  // background-color: #7f4a88;
   border-right: $gridline;
   display: flex;
   height: 100%;
   justify-content: flex-end;
-  // left: 0;
   padding: 25px;
   position: relative;
-  transition: background-color 1s linear;
   width: 25%;
 }
 
@@ -124,12 +128,10 @@
   left: 0;
   line-height: 1;
   opacity: 0.3;
-  // padding-top: 400px;
   position: absolute;
   top: 0;
   transform: rotate(90deg) translate(-5%, -50%);
   transform-origin: top left;
-  // transition: all 0.5s linear;
   user-select: none;
 
   @include media-breakpoint-up(lg) {
