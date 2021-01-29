@@ -18,12 +18,11 @@
 
 .cover {
   align-items: flex-end;
-  // background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 32%;
   display: flex;
-  height: calc(100vh - $header-height);
+  height: calc(100vh - 75px);
 
   @include media-breakpoint-up(lg) {
     align-items: center;
@@ -88,12 +87,18 @@
 .panels {
   display: none;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     bottom: 0;
     display: flex;
-    left: 100px;
+    left: 0;
     overflow: hidden;
     position: absolute;
+    right: 0;
+    top: $header-height;
+  }
+
+  @include media-breakpoint-up(lg) {
+    left: 100px;
     right: 100px;
     top: 0;
   }

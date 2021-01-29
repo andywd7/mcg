@@ -27,6 +27,7 @@
 
   @include media-breakpoint-up(lg) {
     align-items: flex-start;
+    background-color: transparent;
     border-bottom: 0;
     border-right: $gridline;
   }

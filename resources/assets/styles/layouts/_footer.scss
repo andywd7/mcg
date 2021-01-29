@@ -4,10 +4,14 @@
 
   @include media-breakpoint-up(lg) {
     align-content: space-between;
-    border-left-width: 1px;
-    border-top-width: 0;
+    border-left: $gridline;
+    border-top: 0;
     left: auto;
     right: 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-color: transparent;
   }
 }
 
