@@ -35,9 +35,18 @@ themes/mcg/               # → Root of your Sage based theme
 # └── vendor/               # → Composer packages (never edit)
 ```
 
+## To view homepage
+
+Set homepage as static and then choose the Home template for the home page.
+
 ## Stages
 
 1. Initial commit
 2. Added assets required based on design (fonts and images)
 3. Setup page partials and template and dump assets into them to make sure everything compiles and renders correctly
    (resulted in wasted time fixing a fonts path bug and issue with package versions)
+4. Mobile first approach so using best judgement as to how the design should look.
+   1. Header
+   2. Nav
+   3. Content
+   4. Footer

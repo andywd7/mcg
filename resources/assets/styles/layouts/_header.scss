@@ -1,7 +1,60 @@
-.banner .nav li {
-  @extend .nav-item;
+.header {
+  align-items: center;
+  background-color: $white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: $header-height;
+  padding: 0 map-get($spacers, 4);
+  position: relative;
+  z-index: 100;
 }
 
-.banner .nav a {
-  @extend .nav-link;
+.header__brand {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 110;
+}
+
+.header__logo {
+  width: 150px;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.header__toggle-nav {
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: map-get($spacers, 5);
+  height: 26px;
+  opacity: 1;
+  position: relative;
+  width: 50px;
+}
+
+.header__toggle-nav::after,
+.header__toggle-nav::before {
+  background-color: $body-color;
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+
+.header__toggle-nav::before {
+  left: 0;
+  top: 4px;
+}
+
+.header__toggle-nav::after {
+  bottom: 4px;
+  right: 20%;
+  width: 80%;
+}
+
+.header__scroll-label {
+  display: none;
 }
