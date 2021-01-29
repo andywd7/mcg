@@ -1,0 +1,32 @@
+.footer {
+  border-bottom: 0;
+  border-top: $gridline;
+  justify-content: space-between;
+}
+
+.footer__location {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-weight: $font-weight-bold;
+}
+
+.welcome-label {
+  display: none;
+}
+
+.footer__social-icons {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+
+  li {
+    padding-left: 1rem;
+
+    a img {
+      display: block;
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}

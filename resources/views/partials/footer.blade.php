@@ -1,9 +1,9 @@
 <footer class="footer">
-  <button class="btn location">En</button>
+  <button class="footer__location">En</button>
 
-  <div>Welcome to MCG</div>
+  <div class="welcome-label">Welcome to MCG</div>
 
-  <ul class="social-icons">
+  <ul class="footer__social-icons">
     <li>
       <a href="https://twitter.com/MyCleverGroup" target="_blank" aria-label="Facebook">
         <img height="16" src="@asset('images/facebook.svg')" alt="">
