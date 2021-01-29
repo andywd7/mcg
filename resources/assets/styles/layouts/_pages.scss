@@ -1,0 +1,54 @@
+.text-sm {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.logged-in .container-wrap {
+  height: calc(100vh - 32px);
+}
+
+.cover {
+  background-size: cover;
+  // background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: 32%;
+  height: calc(100vh - 75px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.content {
+  padding: 0 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.content__eyebrow {
+  font-size: 15px;
+  margin-bottom: 0.25rem;
+}
+
+.content__heading {
+  font-size: $h2-font-size;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0.25rem;
+}
+
+.content__tagline {
+  font-size: $h4-font-size;
+  line-height: $line-height-sm;
+  margin-bottom: $spacer * 2;
+}
+
+.content__link {
+  padding: 1rem;
+  margin-left: -1rem;
+
+  &::before {
+    content: "\27f6";
+    font-size: 20px;
+    margin-right: $spacer * 0.5;
+  }
+}
